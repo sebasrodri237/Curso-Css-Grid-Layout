@@ -15,6 +15,9 @@ body{
     grid-template: 300px 100px 100px / 50% 200px 100px;/*Forma de 
     declarar filas y columnas en una linea,primero 
     filas y luego columnas*/
+    grid-column-gap: 30px;/*Espaciado entre columnas o horizontal*/
+    grid-row-gap: 30px;
+    grid-gap: 10px 100px;/*Espaciado en filas y columnas en una sola linea*/
 }
 .item{
 

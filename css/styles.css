@@ -12,9 +12,16 @@ body{
     grid-template-rows: 300px 300px;/*Si no doy un tamaño a todas
     las filas tendran un tamaño automatico a las que no declare
     un tamaño*/
-    grid-template: 300px 100px 100px / 50% 200px 100px;/*Forma de 
+    grid-template: 300px 100px 100px / 1fr 1fr 1fr;/*Forma de 
     declarar filas y columnas en una linea,primero 
-    filas y luego columnas*/
+    filas y luego columnas, con la unidad de fracciones dividiremos
+    el espacio, en este caso 1 fr=33.3...%*/
+    grid-template: 300px 100px 100px / repeat(4, 1fr);/*Nueva función
+    repetidora integrada a css que permitira rellenar 
+    el campo mas rapidamente*/
+    grid-template: 300px 100px 100px / repeat(4, minmax(200px,1fr));
+    /*valor minimo que ocupara la columna 200 px, valor maximo
+    que ocupara la columna 1fr, muy util para responsive design*/
     grid-column-gap: 30px;/*Espaciado entre columnas o horizontal*/
     grid-row-gap: 30px;
     grid-gap: 10px 100px;/*Espaciado en filas y columnas en una sola linea*/

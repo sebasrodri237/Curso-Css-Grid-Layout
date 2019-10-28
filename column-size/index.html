@@ -5,7 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tamaño de items en columnas</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 10px;
+            height: 100vh;
+        }
+        .item{
+
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .item:nth-of-type(1){
+
+            background: blue;
+            grid-column-start: 1;/*Desde que grid-line(linea) inicia*/
+            grid-column-end: 3;/*Hasta que grid-line(linea) termina*/
+        }
+        .item:nth-of-type(7){
+
+            grid-column: 2 / 4 ;/*Forma de abreviar ambas en una, 
+            donde inicia y donde finaliza el item 8.*/
+        }
+        .item:nth-of-type(8){
+
+            grid-column: 1 / -1;/*De esta manera tomara todo el 
+            ancho o todas las columnas*/
+        }
+    </style>
 </head>
 <body>
     <section class="container">

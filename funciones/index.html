@@ -5,7 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Funciones</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            display: grid;
+            grid-template: 300px 100px 100px / 1fr 1fr 1fr;/*Forma de 
+            declarar filas y columnas en una linea,primero filas y luego columnas, con la unidad de 
+            fracciones dividiremos el espacio, en este caso 1 fr=33.3...%*/
+            /*grid-template: 300px 100px 100px / repeat(4, 1fr);*/
+            /*grid-template: 300px 100px 100px / repeat(4, minmax(200px, 1fr));*/
+            grid-template: 300px 100px 100px / repeat(4, 1fr);/*Nueva función
+            repetidora integrada a css que permitira rellenar 
+            el campo mas rapidamente*/
+            grid-template: 300px 100px 100px / repeat(4, minmax(200px,1fr));
+            /*valor minimo que ocupara la columna 200 px, valor maximo
+            que ocupara la columna 1fr, muy util para responsive design*/
+            grid-column-gap: 30px;
+            grid-row-gap: 50px;
+            /*grid-gap: filas columnas;*/
+            grid-gap: 10px;
+        }
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+            /*margin-right: 10px;*/
+            /*margin-bottom: 10px;*/
+        }
+        .item:nth-of-type(4) {
+            background: blue;
+            overflow: auto;
+            /*display: subgrid;*/
+            /*display: inline-grid;*/
+            display: grid;
+            grid-template: 50px 50px 50px / 200px 200px 200px;
+        }
+        .item .item {
+            background: yellow;
+        }
+    </style>
 </head>
 <body>
     <section class="container">

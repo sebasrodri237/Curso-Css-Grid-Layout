@@ -5,7 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gap</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            display: grid;
+            /*grid-template-columns: 25% 200px 25%;*/
+            /*grid-template-rows: 300px 150px;*/
+            /*grid-template: filas / columnas ;*/
+            grid-template: 300px 100px 100px / 50% 200px 100px;
+            grid-column-gap: 30px;
+            grid-column-gap: 30px;/*Espaciado entre columnas o horizontal*/
+            grid-row-gap: 30px;
+            grid-gap: 10px 100px;/*Espaciado en filas y columnas en una sola linea*/
+        }
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+            /*margin-right: 10px;*/
+            /*margin-bottom: 10px;*/
+        }
+        .item:nth-of-type(4) {
+            background: blue;
+            overflow: auto;
+            /*display: subgrid;*/
+            /*display: inline-grid;*/
+            display: grid;
+            grid-template: 50px 50px 50px / 200px 200px 200px;
+        }
+        .item .item {
+            background: yellow;
+            }
+    </style>
 </head>
 <body>
     <section class="container">

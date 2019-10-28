@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Columnas</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            display: grid;/*Iniciar el grid(grilla)*/
+            grid-template-columns: 25% 200px 25%;;/*Grid con tres columnas,
+            los elementos se organizaran en estas columnas, si quiero
+            mas dinamisco puedo colocar 25% 50% 25% o combinar
+            como 25% 200px 25%*/
+        }
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+  </style>
 </head>
 <body>
     <section class="container">

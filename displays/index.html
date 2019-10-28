@@ -5,7 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Displays</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            display: grid;
+            /*grid-template-columns: 25% 200px 25%;*/
+            /*grid-template-rows: 300px 150px;*/
+            /*grid-template: filas / columnas ;*/
+            grid-template: 300px 100px 100px / 50% 200px 100px;
+        }
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .item:nth-of-type(4) {/*Pseudo clase, tomara el numero de elemento
+        de clase item que yo le indique*/
+            background: blue;
+            overflow: auto;/*Obtener un scroll en contenido excedente
+            o que no puedo visualizar*/
+            display: grid;/*Grid dentro de un grid*/
+            grid-template: 50px 50px 50px / 200px 200px 200px;
+        }
+        .item .item {
+            background: yellow;
+        }
+    </style>
 </head>
 <body>
     <section class="container">

@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Filas</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            display: grid;
+            /*grid-template-columns: 25% 200px 25%;*/
+            grid-template-rows: 300px 300px;/*Si no doy un tamaño a todas
+             filas tendran un tamaño automatico a las que no declare
+            un tamaño*/
+            /*grid-template: filas / columnas ;*/
+            grid-template: 300px 100px 100px / 50% 200px 100px;/*Forma de 
+            declarar filas y columnas en una linea,primero 
+            filas y luego columnas*/
+        }
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <section class="container">

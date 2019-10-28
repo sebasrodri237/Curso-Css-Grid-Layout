@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tamaño de items en columnas</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tamaño de items en columnas y filas</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            grid-gap: 5px;
+            height: 100vh;
+        }
+        .item{
+
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .item:nth-of-type(1){
+
+            grid-column-start: 1;/*Desde que grid-line(linea) inicia*/
+            grid-column-end: 3;/*Hasta que grid-line(linea) termina*/
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+        }
+        .item:nth-of-type(2){
+
+            grid-column: 4 / span 2;
+            grid-row: 1 / span 2;
+        }
+        .item:nth-of-type(3){
+
+        grid-column: 6 / span 2;
+        }
+    </style>
 </head>
 <body>
     <section class="container">

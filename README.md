@@ -1,0 +1,1 @@
+"Atencion debido a problemas por enlazar erroneamente el mismo archivo styles.css a todos las lecciones la historia del curso volvio a iniciar con los problemas corregidos desde el commit 40adcaf"

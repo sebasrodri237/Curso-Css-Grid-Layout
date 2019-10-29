@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid implicito</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+            /*Forma de nombrar lineas*/
+            grid-template-rows: [inicio] 200px [inicio2] 200px [final]; 
+            grid-gap: 5px;
+            height: 100vh;
+            grid-auto-flow: column;/*Esto hara que lo elementos que
+            no fueron modificados(posicion y propiedades) en la grilla 
+            formandose estos elementos a manera de columna*/
+            grid-auto-columns: 200px 100px 200px 100px;/*Manejar los template
+            con grid implicito*/
+            /*Esto se puede hacer de igual manera para filas*/
+            
+        }
+        .item{
+
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .item:nth-of-type(1){
+
+            grid-column: inicio / destacado-end;
+            grid-row: inicio / final;
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2; */
+        }
+        .item:nth-of-type(2){
+
+            grid-column: destacado-end / destacado2-end;
+            grid-row: inicio / final;
+            /* grid-column: 4 / span 2;
+            grid-row: 1 / span 2; */
+        }
+        .item:nth-of-type(3){
+
+            grid-column: destacado2-end / final;
+            /* grid-column: 6 / span 2; */
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item">item #1</div>
+        <div class="item">item #2</div>
+        <div class="item">item #3</div>
+        <div class="item">item #4</div>
+        <div class="item">item #5</div>
+        <!--Colocados para este ejemplo de grid implicito-->
+        <div class="item">item #5</div>
+        <div class="item">item #5</div>
+        <div class="item">item #5</div>
+        <div class="item">item #5</div>        
+        <!--Estos elementos se acomodan por defecto con css, para
+        definir el flujo automatico se utilizara grid implicito-->
+    </section>    
+</body>
+</html>

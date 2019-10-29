@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nombrando lineas</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Definiendo el nombre de lineas</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+            /*Forma de nombrar lineas*/
+            grid-template-rows: [inicio] 200px [inicio2] 200px [final]; 
+            grid-gap: 5px;
+            height: 100vh;
+        }
+        .item{
+
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .item:nth-of-type(1){
+
+            grid-column: inicio / destacado-end;
+            grid-row: inicio / final;
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2; */
+        }
+        .item:nth-of-type(2){
+
+            grid-column: destacado-end / destacado2-end;
+            grid-row: inicio / final;
+            /* grid-column: 4 / span 2;
+            grid-row: 1 / span 2; */
+        }
+        .item:nth-of-type(3){
+
+            grid-column: destacado2-end / final;
+            /* grid-column: 6 / span 2; */
+        }
+    </style>
 </head>
 <body>
     <section class="container">

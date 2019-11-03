@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movi.es</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template: 100px 1fr 150px/ 100px 1fr;
+            height: 100vh;
+            grid-template-areas: "header header"
+                                 "left contenido"
+                                 "left contenido"; 
+        }
+        .item {
+            
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .header {
+            
+            grid-area: header;
+        }
+        .left {
+            
+            grid-area: left;
+        }
+        .contenido {
+            
+            grid-area: contenido;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.PNG" alt="LOGO">
+            </div>
+            <input type="text" class="search" placeholder="Busca tu peli,actor,actriz o director favorito">
+            <div class="info-user">
+                <p>Sebastian Rodriguez</p>
+                <img src="images/userImage.jpg" alt="" class="user-img">
+                <i class="icon-menu">Menu</i>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        <div class="left-container">
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#">
+                            <i class="icon-home">HOME</i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            <i class="icon-trending">TRENDING</i>
+                            <p>Trending</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            <i class="icon-likes">LIKES</i>
+                            <p>Más likes</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a class="link" href="#">
+                            <i class="icon-settings">AJUSTES</i>
+                            <p>Ajustes</p>
+                        </a>
+                    </li>
+                </ol>    
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-container">
+            <div class="category">
+                <p class="category-title">Ahora en el cine</p>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/movie1.jpg" alt="MOVIE1" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/image2.jpg" alt="MOVIE2" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/image3.jpg" alt="MOVIE3" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+            </div>
+            <div class="category">
+                <p class="category-title">Ahora en el cine</p>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/movie1.jpg" alt="MOVIE1" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/image2.jpg" alt="MOVIE2" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/image3.jpg" alt="MOVIE3" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+            </div>
+            <div class="category">
+                <p class="category-title">Ahora en el cine</p>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/movie1.jpg" alt="MOVIE1" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/image2.jpg" alt="MOVIE2" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="item-link">
+                        <figure class="category-imageContainer">
+                            <img src="images/image3.jpg" alt="MOVIE3" class="category-image">
+                        </figure>    
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>  
+</body>
+</html>

@@ -60,7 +60,7 @@ i{
 .container{
 
   display: grid;
-  grid-template: 50px 260px 260px 260px/ 100px 1fr;
+  grid-template: 50px 260px 260px 260px/ 80px 1100px;
   grid-template-areas: "header header"
                        "left contenido"
                        "left contenido"
@@ -77,11 +77,35 @@ i{
   justify-content: space-between;
   align-items: center;
 }
+.logo{
+
+  padding-left: 25px;
+}
+.search{
+
+  width: 400px;
+  font-size: 14px;
+  padding: 5px;
+  color: rgb(206, 206, 206);
+  border: 1px solid rgb(168, 167, 175);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 .info-user{
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+.user-img{
+
+  margin: 0px 10px;
+  border-radius: 50%;
+}
+.icon-menu{
+
+  margin-right: 15px;
 }
 .left{
   
@@ -100,35 +124,69 @@ i{
 
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 80px 80px 80px 1fr;
+  grid-template-areas: "home"
+                       "trend"
+                       "likes"
+                       "settings";
   align-items: center;
+  justify-items: center;
+  grid-gap: 5px;
+  
 }
 .menu{
 
   width: 100%;
 }
+.menu p{
+
+  margin: 0;
+}
+.home{
+
+  grid-area: home;
+  margin-top: 20px;
+}
+.trend{
+
+  grid-area: trend;
+}
+.likes{
+
+  grid-area: likes;
+}
 .settings{
 
-  
+  grid-area: settings;
+  align-self: end;
+  margin-bottom: 30px;
 }
-.content-container{
+.content{
 
   grid-area: contenido;
 }
-.category1 {
-  
-  display: flex;
-  flex-direction: row;
+.content-container{
+
+  height: 100%;
 }
-.category2 {
-  
-  display: flex;
-  flex-direction: row;
+.category-title{
+
+   margin-left: 20px;
 }
-.category3 {
-  
+.category{
+
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  
+}
+.category-item{
+
+}
+.category-image{
+
+  box-shadow: 0px 2px 5px 7px rgba(238,233,240,0.6);
 }
 

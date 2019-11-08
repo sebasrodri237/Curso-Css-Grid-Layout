@@ -65,7 +65,7 @@ i{
 .container{
 
   display: grid;
-  grid-template: 50px 260px 260px 260px/ 80px 1100px;
+  grid-template: 50px 300px 300px 300px/ 80px 1400px;
   grid-template-areas: "header header"
                        "left contenido"
                        "left contenido"
@@ -117,7 +117,7 @@ i{
 .left{
   
   background: rgb(254, 102, 101);
-  height: 850px;
+  height: 100%;
   width: 100%;
   grid-area: left;
   display: flex;
@@ -181,7 +181,7 @@ i{
 }
 .category-title{
 
-   margin-left: 20px;
+   margin-left: 25px;
 }
 .category{
 
@@ -207,7 +207,7 @@ i{
   left: 0;
   right: 0;
   bottom: 0;
-  top: 80px;
+  top: 90px;
   display: none;
   align-items: center;
   justify-content: center;

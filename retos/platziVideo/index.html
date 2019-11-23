@@ -9,47 +9,108 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="left">
-    <div class="logo">
-        <figure>
-            <img src="#" alt="PlatziVideo">
-        </figure>
-    
-    </div>
-    <div class="list-top">
-        <ol>
-            <h4>My Playlist</h4>
-            <li>5 Reasons To Choose a Notebook Over A Computer Desktop</li>
-            <li>Get Around Easily With A New York Limousine Service</li>
-            <li>How To Cook A Tender Juicy Steak</li>
-            <li>How To Remove Kidney Stones</li>
-            <li>The Science Of Superstitions</li>
-            <li>5 Reasons To Choose a Notebook Over A Computer Desktop</li>
-            <li>Get Around Easily With A New York Limousine Service</li>
-            <li>How To Cook A Tender Juicy Steak</li>
-            <li>How To Remove Kidney Stones</li>
-            <li>The Science Of Superstitions</li>
-        </ol>
-    </div>
-    <div class="list-friends">
-            <ol>
-                <h4>Playlist de Amigos</h4>
-                <li>Gordon Carrol</li>
-                <li>Adeline Wilkins</li>
-                <li>John Wheeler</li>
-                <li>Katherine Nelson</li>
-            </ol>
-    </div>
-    </div>
-    <div class="principal-content">
+    <div class="container">
+        <div class="left">
+                <div class="logo">
+                    <figure>
+                        <img src="#" alt="PlatziVideo">
+                    </figure>
+                
+                </div>
+                <div class="list-top">
+                    <ol>
+                        <h4>My Playlist</h4>
+                        <li>5 Reasons To Choose a Notebook Over A Computer Desktop</li>
+                        <li>Get Around Easily With A New York Limousine Service</li>
+                        <li>How To Cook A Tender Juicy Steak</li>
+                        <li>How To Remove Kidney Stones</li>
+                        <li>The Science Of Superstitions</li>
+                        <li>5 Reasons To Choose a Notebook Over A Computer Desktop</li>
+                        <li>Get Around Easily With A New York Limousine Service</li>
+                        <li>How To Cook A Tender Juicy Steak</li>
+                        <li>How To Remove Kidney Stones</li>
+                        <li>The Science Of Superstitions</li>
+                    </ol>
+                </div>
+                <div class="list-friends">
+                        <ol>
+                            <h4>Playlist de Amigos</h4>
+                            <li>Gordon Carrol</li>
+                            <li>Adeline Wilkins</li>
+                            <li>John Wheeler</li>
+                            <li>Katherine Nelson</li>
+                        </ol>
+                </div>
+        </div>
         <div class="video-container">
             <figure class="main-video">
                 <video class="url-video" src="videos/Rain.mp4" width="640" height="360" controls ></video>
             </figure>
         </div>
-        <div class="video-info">
-            <p class="video-title">Calm Videos - Rain</p>
-            <p class="video-views">125,000 Vistas</p>
+        <div class="video-description">
+            <div class="video-info">
+                <p class="video-title">Calm Videos - Rain</p>
+                <p class="video-views">125,000 Vistas</p>
+            </div>
+            <div class="video-actions">
+                <a class="url-addList" href="#">Agregar a mi lista</a>
+                <div class="video-share">
+                    <i class="icon-share"></i>
+                    <a class="url-share" href="#">Compartir</a>
+                </div>
+                <div class="video-save">
+                    <i class="icon-save"></i>
+                    <a class="url-save" href="#">Guardar</a>
+                </div>
+                <div class="video-tags">
+                    <a class="url-tag" href="#">Nature</a>
+                    <a class="url-tag" href="#">Rain</a>
+                    <a class="url-tag" href="#">Water</a>
+                    <a class="url-tag" href="#">Relax</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-opinion">
+            <div class="comments">
+                    <h4 class="title-comments">Comentarios</h4>
+                    <input class="add-comment" type="text" placeholder="Añade un comentario">
+                    <ol class="list-comments">
+                        <li class="individual-comment">
+                            <h6 class="autor-comment">Gordon Carroll</h6>
+                            <p class="corps-comment">It's very relaxing</p>
+                        </li>
+                        <li class="individual-comment">
+                            <h6 class="autor-comment">Adeline Wilkins</h6>
+                            <p class="corps-comment">I love the sound of the rain</p>
+                        </li>
+                        <li class="individual-comment">
+                            <h6 class="autor-comment">John Wheeler</h6>
+                            <p class="corps-comment">The best sounds are the sounds of the nature</p>
+                        </li>
+                        <li class="individual-comment">
+                            <h6 class="autor-comment">Adeline Wilkins</h6>
+                            <p class="corps-comment">I love the sound of the rain</p>
+                        </li>
+                        <li class="individual-comment">
+                            <h6 class="autor-comment">Gordon Carroll</h6>
+                            <p class="corps-comment">It's very relaxing</p>
+                        </li>
+                        
+                    </ol>
+            </div>
+            <div class="suggestions">
+                    <h5 class="title-suggestions">Sugerencias</h5>
+                    <div class="video-suggestions">
+                        <figure>
+                            <img class="image-suggestion" src="images/waterfalls.jpg" alt="#" width="200" height="150">
+                            <p class="description-suggestion"></p>
+                        </figure>
+                        <figure>
+                            <img class="image-suggestion" src="images/countryside.jpg" alt="#" width="200" height="150">
+                            <p class="description-suggestion"></p>
+                        </figure>
+                    </div>
+            </div>
         </div>
     </div>
 </body>

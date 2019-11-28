@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ptz333');
+    src:  url('../fonts/icomoon.eot?ptz333#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ptz333') format('truetype'),
+      url('../fonts/icomoon.woff?ptz333') format('woff'),
+      url('../fonts/icomoon.svg?ptz333#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-redo2:before {
+    content: "\e968";
+}
+.icon-cloud-download:before {
+    content: "\e9c2";
+}
+body{
+
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+figure{
+
+    margin: 0;
+}
+a{
+
+    text-decoration: none;
+}
+ol,ul{
+    
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.container{
+
+    width: 1440px;
+    height: auto;
+    display: grid;
+    grid-template: 450px 130px 450px/ 330px 1fr 1fr;
+    grid-template-areas: "left video-container video-container"
+                         "left video-description video-description"
+                         "left video-opinion video-opinion";
+}
+.left{
+
+    grid-area: left;
+    height: 100%; 
+    color: rgb(255, 255, 255);
+    background: rgb(21, 27, 49);
+}
+.left ol{
+
+    margin-left: 35px;
+}
+.logo{
+
+    margin-top: 30px;
+}
+.logo,
+.list-top h4{
+
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-weight: 400;
+}
+.list-top ol{
+
+    list-style-type: decimal;
+}
+.list-top li{
+
+    padding-left: 25px;
+    width: 70%;
+}
+.list-top-special{
+
+    margin-left: 10px;
+}
+.list-top-special p{
+
+    margin-left: -10px;
+}
+.list-friends{
+
+    margin-top: 35px;
+}
+.list-friends h4{
+
+    font-size: 1.2em;
+    margin: 0px 0px 10px 20px;
+    font-weight: 400;
+}
+.list-friends li{
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-friends p{
+
+    font-size: 18px;
+    font-weight: 400;
+}
+.list-friends img{
+
+    margin-left: -15px;
+    padding-right: 15px;
+    border-radius: 50%;
+}
+.video-container{
+
+    grid-area: video-container;
+    width: 1090px;
+}
+.video-container video{
+
+    object-fit: cover;
+}
+.video-description{
+
+    grid-area: video-description;   
+    width: 1090px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(215, 215, 215, 0.71);
+}
+.video-title{
+
+    color:rgb(71, 84, 95);
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.video-views{
+
+    margin-top: 0px;
+    margin-left: 20px;
+    color: rgb(206, 206, 206);
+}
+.video-actions{
+
+    height: 40px;
+    display: grid;
+    grid-template: 1090px/ 170px 30px 60px 30px 60px 90px 350px;
+    grid-template-areas: "video-addList . video-share . video-save . video-tags";
+}
+.video-addList{
+
+    height: 40px;
+    grid-area: video-addList;
+    display: flex;
+    align-items: flex-start;
+}
+.url-addList{
+
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    padding: 8px;
+    background: linear-gradient(to right, red, pink);
+    border-radius: 12px;
+}
+.video-share{
+
+    height: 40px;
+    grid-area: video-share;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.icon-share{
+
+    font-size: 20px;
+}
+.url-share{
+
+    font-size: 12px;
+}
+.video-save{
+
+    height: 40px;
+    grid-area: video-save;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.icon-save{
+
+    font-size: 20px;
+}
+.url-save{
+
+    font-size: 12px;
+}
+.icon-share,
+.url-share,
+.icon-save,
+.url-save{
+
+    color:rgb(71, 84, 95);
+}
+.video-tags{
+
+    height: 40px;
+    grid-area: video-tags;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.url-tag{
+
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.one-tag{
+
+    padding: 4px 20px;
+    background-color: rgb(157, 84, 255);
+    border-radius: 15px;
+}
+.two-tag{
+
+    padding: 4px 26px;
+    background-color: rgb(23, 233, 196);
+    border-radius: 15px;
+}
+.three-tag{
+
+    padding: 4px 26px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+}
+.four-tag{
+
+    padding: 4px 26px;
+    background-color: rgb(237, 48, 130);
+    border-radius: 15px;
+}
+.video-opinion{
+
+    grid-area: video-opinion;
+    display: grid;
+    grid-template: 450px/1fr 1fr;
+    grid-template-areas: "comments suggestions";
+}
+.comments{
+
+    grid-area: comments;
+}
+.autor-comment{
+
+    margin-bottom: 0px;
+}
+.suggestions{
+
+    grid-area: suggestions;
+}
